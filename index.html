@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Bleep Front End Test</title>
+		<link type="text/css" rel="stylesheet" href="dist/css/app.css"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <section class="graph5MostSellableItems">
+                    <div id="pieChart"></div>
+                </section>
+
+                <section class="salesTableContainer">
+                    <table>
+                        <thead>
+                            <th class="headingCell">Product Code</th>
+                            <th class="headingCell">Product Name</th>
+                            <th class="headingCell">Date</th>
+                            <th class="headingCell">Total Without Tax</th>
+                            <th class="headingCell">Total With Tax</th>
+                        </thead>
+                        <tbody class="salesTableBody"></tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+
+        <script id="tableRow" type="x-tmpl-mustache">
+            <tr>
+                <td class="tableCell">{{product_code}}</td>
+                <td class="tableCell product-name">{{product_name}}</td>
+                <td class="tableCell">{{date}}</td>
+                <td class="tableCell">&pound;{{totalwotax}}</td>
+                <td class="tableCell">&pound;{{totalwitax}}</td>
+            </tr>
+        </script>
+
+        <script src="dist/js/app.min.js"></script>
+        <script>
+            /* JS entry point */
+            $(document).displaySalesTable({
+                startDay: 1,
+                startMonth: 11,
+                startYear: 2016,
+                endDay: 31,
+                endMonth: 11,
+                endYear: 2016
+            });
+//            $(document).displaySalesTable({
+//                startDay: 1,
+//                startMonth: 10,
+//                startYear: 2016,
+//                endDay: 15,
+//                endMonth: 1,
+//                endYear: 2017
+//            });
+        </script>
+    </body>
+</html>

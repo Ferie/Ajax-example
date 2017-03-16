@@ -1,0 +1,24 @@
+// Tables
+
+.salesTableContainer {
+    margin: 24px 0;
+}
+
+.headingCell,
+.tableCell {
+    border: 1px solid $black;
+    padding: 5px 10px;
+}
+
+.headingCell {
+    background-color: $lightGrey;
+    font-weight: 600;
+}
+
+.tableCell {
+    text-align: right;
+}
+
+.product-name {
+    text-align: left;
+}

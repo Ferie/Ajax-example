@@ -1,0 +1,28 @@
+// Vendors
+@import "vendor/reset.scss";
+
+// Typography
+@import "typography/colors";
+@import "typography/fonts";
+
+// Typography custom variables
+$font: $base-font-family;
+$font-size: base-font-size;
+$line-height: 1.2;
+
+// Page setting
+@import "partials/body-settings";
+
+// Components
+@import "components/tables";
+@import "components/graphs";
+
+
+// Important Final Global Rules
+.hidden {
+    display: none;
+}
+
+/*.zc-ref {
+    display: none;
+}*/

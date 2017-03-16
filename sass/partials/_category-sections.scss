@@ -1,0 +1,68 @@
+.categorySection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.singleGameContainer {
+    width: 100%;
+}
+
+.game {
+    padding: 10px;
+}
+
+.gameContent {
+    background-color: #FFCC00;
+    padding: 10px;
+    max-height: 450px;
+}
+
+.image {
+    width: 100%;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    margin: 50px 0 10px;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    width: 100%
+}
+
+.titleContainer {
+    font-size: $font-size;
+    font-weight: 600;
+    margin: 14px 0;
+    text-transform: uppercase;
+}
+
+.descriptionContainer {
+    margin: 16px 0;
+}
+
+// Media queries
+@media (min-width: 569px) {
+    .gameContent {
+        max-height: 650px;
+    }
+}
+
+@media (min-width: 769px) {
+    .singleGameContainer {
+        width: 50%;
+    }
+
+    .gameContent {
+        max-height: 450px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .singleGameContainer {
+        width: 25%;
+    }
+
+    .gameContent {
+        max-height: 350px;
+    }
+}

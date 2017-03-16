@@ -1,0 +1,78 @@
+// Buttons
+
+
+.ctaButton,
+.ctaButton:hover,
+.showMore,
+.showMore:hover {
+    display: block;
+    background-color: $green;
+    font-size: $font-size;
+    font-weight: 600;
+    color: $white;
+    cursor: pointer;
+    margin: 0;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 50%;
+
+    &:hover {
+        //@include transition(background-color .5s ease-in);
+        background-color: $lightGreen;
+    }
+
+    &:active {
+        //@include transition(background-color .5s ease-in);
+        background-color: $darkGreen;
+    }
+}
+
+.showMore,
+.showMore:hover {
+    background-color: $terquoise;
+    font-size: 24px;
+    padding: 10px 0;
+    width: 100%;
+
+    &:hover {
+        background-color: $lightBlue;
+    }
+
+    &:active {
+        background-color: $darkBlue;
+    }
+}
+
+.buttonContainer {
+    padding: 0 10px;
+}
+
+
+/*
+.button {
+    @include transition(ease, 500ms, background-color);
+    display: block;
+    background-color: $terquoise;
+    border: 0;
+    font-size: em(16);
+    font-weight: $button-font-weight;
+    color: $white;
+    cursor: pointer;
+    outline: none;
+    padding: em(16);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: $transparent;
+
+    &:hover {
+        background-color: scale-color($terquoise, $lightness: 5%);
+    }
+
+    &:active {
+        background-color: scale-color($terquoise, $lightness: -5%);
+    }
+}
+*/

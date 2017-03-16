@@ -1,0 +1,31 @@
+.navigationContainer {
+    margin: 48px 0;
+    padding: 0 10px;
+}
+
+.navigationMenu {
+    border-bottom: 4px solid $pink;
+    padding: 0 10px;
+}
+
+.menuContainer {
+    display: flex; /* Flexbox not working on IE9 and older browsers */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menuItem {
+    /*display: inline-block;*/
+    background-color: $lightPink;
+    font-weight: 600;
+    color: $white;
+    cursor: pointer;
+    /*margin-left: 30px;*/ 
+    padding: 5px 20px;
+    text-align: center;
+    width: 15%;
+}
+
+.menuItem.currentPage {
+    background-color: $pink;
+}
