@@ -2,9 +2,7 @@
 
 This jQuery plugin shows an Ajax call that reads a JSON file that contains a list of sold items.
 
-The returning data are shown between two dates that are set in the plugin entry point.
-
-[See it in action] (http://riccardoandreatta.com/web-app/Ajax-example/index.html)
+The returning data are shown between two dates that are set in the plugin entry point. [See it in action](http://riccardoandreatta.com/web-app/Ajax-example/index.html).
 
 
 ## Building the source files
